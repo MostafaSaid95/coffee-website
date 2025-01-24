@@ -1,0 +1,455 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #d3b987d1;
+}
+.container {
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media (max-width: 992px) {
+  /* :root {
+    font-size: 20px;
+  } */
+}
+@media (max-width: 1200px) {
+  .special_coffe .container .arrow {
+    display: none;
+  }
+}
+
+/* :start header  */
+header {
+  padding-top: 3rem;
+}
+header .container {
+  background-image: url(img/hero.jpg);
+  background-size: cover;
+  padding-bottom: 3.1rem;
+  padding-top: 2rem;
+}
+
+/* start nav  */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 3.1rem;
+  gap: 3.1rem;
+}
+.logo {
+  width: 6rem;
+}
+.img_logo {
+  width: 100%;
+}
+nav .links {
+  position: relative;
+  display: flex;
+  gap: 0.5rem;
+}
+.bars {
+  display: none;
+  cursor: pointer;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border-radius: 1rem;
+}
+a.active,
+a:hover {
+  color: rgb(0, 0, 0);
+}
+nav i {
+  font-size: 1.4rem;
+  color: white;
+}
+
+.text {
+  margin-left: 3rem;
+  padding: 3.1rem;
+  margin-bottom: 3.1rem;
+  color: white;
+}
+.text h5 {
+  font-size: 1.7rem;
+  margin-bottom: 0.8rem;
+}
+.text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.text a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 1rem 2rem;
+  border-radius: 1.8rem;
+}
+/* start main  */
+/* start menu section  */
+.menu .container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.menu .container figure {
+  width: 4rem;
+}
+.menu .container figure img {
+  width: 100%;
+}
+.menu .container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+}
+/* start special coffe section  */
+.special_coffe .container {
+  background-color: white;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.special_coffe .container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.special_coffe .container .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.special_coffe .container .content .coffe {
+  background-color: rgb(139 132 132 / 15%);
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  flex-basis: 14rem;
+}
+.content div figure {
+  width: 100%;
+}
+.content div figure img {
+  width: 100%;
+  border-radius: 0.2rem;
+}
+
+.special_coffe .container .arrow {
+  width: 1.5rem;
+  background-color: rgb(139 132 132 / 10%);
+  border-radius: 50%;
+}
+.special_coffe .container .arrow img {
+  width: 100%;
+}
+.order {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.order a {
+  text-decoration: none;
+  background-color: #532a2a;
+  padding: 0.4rem;
+  border-radius: 0.2rem;
+  color: white;
+}
+.order span {
+  font-weight: bold;
+}
+/* start coffee beans section */
+.coffe_beans .container {
+  background-color: #d3b987d1;
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.coffe_beans .container .left {
+  width: 25%;
+  transform: translateX(-36px);
+}
+.coffe_beans .container figure img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.right {
+  width: 25%;
+  translate: 5rem;
+}
+.coffe_beans .container div {
+  align-self: center;
+  padding: 1rem;
+}
+.coffe_beans .container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.coffe_beans .container a {
+  text-decoration: none;
+  color: white;
+  background-color: #532a2a;
+  padding: 0.4rem 0.9rem;
+  border-radius: 0.6rem;
+}
+/* start Happy Customers section  */
+.Happy_Customers .container {
+  background-color: white;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.Happy_Customers .container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.reviews {
+  padding: 0 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.review {
+  background-color: rgb(139 132 132 / 10%);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+.review:hover {
+  scale: 1.1;
+}
+.review h3 {
+  font-size: 0.7rem;
+}
+.review p {
+  font-size: 0.8rem;
+}
+.Happy_Customers .user figure {
+  width: 3rem;
+}
+.user figure img,
+.stars span img {
+  width: 100%;
+}
+.user figure img {
+  height: 3rem;
+  border-radius: 50%;
+}
+.user {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.stars {
+  display: flex;
+}
+.Happy_Customers .stars span {
+  width: 0.5rem;
+}
+/* start subscribe section  */
+.subscribe .container {
+  padding: 2rem 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+.subscribe .container figure {
+  width: 20%;
+}
+.subscribe .container figure img {
+  width: 100%;
+  height: 100%;
+}
+.rotate {
+  rotate: 180deg;
+  transform: translate(0, 2rem);
+}
+.subscribe .container div {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.subscribe .container div h2,
+p {
+  align-self: center;
+}
+.subscribe .container form {
+  display: flex;
+  gap: 1rem;
+}
+.subscribe .container form label {
+  display: none;
+}
+.subscribe .container input {
+  padding: 0.5rem 3rem;
+  border: none;
+  border-radius: 2rem;
+}
+.subscribe .container button {
+  background-color: #532a2a;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+/* start footer  */
+footer .container {
+  background-color: #372121;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+footer .container .logo {
+  transform: translateY(4px);
+}
+footer .container h4 {
+  font-size: 1.5rem;
+  color: white;
+}
+footer .container div {
+  margin-bottom: 1rem;
+}
+footer .container ul {
+  list-style: none;
+}
+footer .container a {
+  color: white;
+  text-decoration: none;
+}
+.twitter {
+  width: 6rem;
+}
+.twitter img {
+  width: 20%;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .coffe_beans .container .left {
+    transform: translateX(-26px);
+  }
+  .right {
+    translate: 4rem;
+  }
+  .coffe_beans .container h2 {
+    font-size: 1.5rem;
+  }
+  .coffe_beans .container a {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 599px) {
+  .coffe_beans .container .left {
+    transform: translateX(-20px);
+  }
+  .right {
+    translate: 3rem;
+  }
+  .coffe_beans .container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .coffe_beans .container a {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+  }
+  .reviews {
+    flex-direction: column;
+  }
+}
+@media (min-width: 600px) and (max-width: 768px) {
+  header {
+    padding: 0;
+  }
+  .bars {
+    display: block;
+  }
+  nav ul::after {
+    content: "\f0d7";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: -12px;
+    right: 0;
+  }
+  nav ul {
+    position: absolute;
+    right: 39px;
+    flex-direction: column;
+    display: none;
+    background: #d3b987d1;
+    top: 28px;
+  }
+  .links:hover ul {
+    display: flex;
+  }
+
+  .coffe_beans .container .left {
+    transform: translateX(-26px);
+  }
+  .right {
+    translate: 4rem;
+  }
+  .coffe_beans .container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .coffe_beans .container a {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.9rem;
+  }
+  .reviews {
+    flex-direction: column;
+  }
+  footer .container h4 {
+    font-size: 1rem;
+  }
+}
+
+.example::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f007";
+  margin-right: 8px;
+}
